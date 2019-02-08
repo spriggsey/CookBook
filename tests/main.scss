@@ -1,0 +1,9 @@
+// import the tailwind stuff, but this shouldn't be in the actual cookbook due to conflicts
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+@import "~bemix";
+
+// import the cookbook code so that we can test it !
+@import "../scss/cookbook";
