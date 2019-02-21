@@ -1,0 +1,41 @@
+@include b('modal') {
+    @apply h-screen w-full absolute flex items-center justify-center;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    &:before {
+        content: '';
+        @apply h-screen w-full absolute bg-black opacity-50;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    @include e('container') {
+        @apply bg-white shadow-lg rounded m-2;
+        max-width: 400px;
+        z-index: 1;
+        pointer-events: all;
+    }
+
+
+    @include e('header') {
+        @apply rounded-t p-5 bg-primary;
+    }
+
+    @include e('title') {
+        @apply text-2xl text-white text-center;
+    }
+
+    @include e('text') {
+        @apply my-2 mb-4 text-grey-darkest;
+        @include m('bold') {
+            @apply font-bold;
+        }
+    }
+
+    @include e('footer') {
+        @apply rounded-b p-5 bg-primary;
+    }
+}

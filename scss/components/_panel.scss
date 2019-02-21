@@ -1,0 +1,47 @@
+@include b('panel') {
+    @apply rounded shadow mx-2;
+
+    @include e('header') {
+        @apply font-medium text-lg flex items-center justify-between text-primary-lightest bg-primary p-3 rounded-t;
+    }
+
+    @include e('body') {
+        @apply bg-white rounded px-8 py-6 mb-4 flex flex-col;
+
+        @include m('split') {
+            @screen md {
+                @apply flex-row;
+            }
+        }
+    }
+
+    @include e('footer') {
+        @apply bg-primary -mt-3 p-3 text-primary-lightest rounded-b;
+
+        @include b('btn') {
+            @apply bg-primary text-primary-lightest border-2 border-primary-light;
+            &:hover {
+                @apply bg-primary-light;
+            }
+        }
+    }
+
+    @include e('half-section') {
+        @screen md {
+            @apply w-1/2;
+        }
+
+        &:first-child {
+            @apply border-b-2 mb-5 pb-5;
+
+            @screen md {
+                @apply w-1/2 pb-0 mb-0 border-b-0 border-r-2 mr-5 pr-5;
+            }
+        }
+
+    }
+
+    @include e('subheading') {
+        @apply text-primary-darker mb-4;
+    }
+}

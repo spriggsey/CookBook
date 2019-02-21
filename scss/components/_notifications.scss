@@ -1,0 +1,32 @@
+@include b('notification') {
+    @apply absolute  flex p-4 rounded shadow-lg items-center;
+
+    bottom: 2rem;
+    right: 2rem;
+
+    @include e('dismiss') {
+        @apply no-underline font-bold border rounded inline-block ml-4;
+    }
+
+    @include m('success') {
+        @apply bg-green text-green-lightest;
+
+        @include e('dismiss') {
+            @apply text-green-lightest border-green-lighter;
+            &:hover {
+                @apply bg-green-light;
+            }
+        }
+    }
+
+    @include m('error') {
+        @apply bg-red text-red-lightest;
+
+        @include e('dismiss') {
+            @apply text-red-lightest border-red-lighter;
+            &:hover {
+                @apply bg-red-lightest text-red-dark border-red-lightest;
+            }
+        }
+    }
+}

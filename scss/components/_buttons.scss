@@ -1,0 +1,25 @@
+@include b('btn') {
+    @apply bg-primary inline-block no-underline text-center text-white font-semibold py-2 px-4 rounded;
+    &:hover {
+        @apply bg-primary-dark;
+    }
+    @include m('sm') {
+        @apply text-sm py-2 px-2;
+    }
+    @include m('danger') {
+        @apply bg-red;
+        &:hover {
+            @apply bg-red-dark;
+        }
+    }
+    @include m('info') {
+        @apply bg-blue;
+    }
+
+    @include m('header') {
+        @apply bg-transparent py-0 px-2 border-2 border-primary-light;
+        &:hover {
+            @apply bg-primary-light;
+        }
+    }
+}

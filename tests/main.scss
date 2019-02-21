@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+$fullElementNames: true;
 @import "~bemix";
 
 // import the cookbook code so that we can test it !

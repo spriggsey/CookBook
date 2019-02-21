@@ -1,0 +1,24 @@
+// a utility mixin to allow us to apply container specific stuff to blocks, this is not allowed by default
+@mixin container() {
+    @apply .w-full .px-3 .mx-auto;
+    @screen sm {
+        & {
+            max-width: config('screens.sm');
+        }
+    }
+    @screen md {
+        & {
+            max-width: config('screens.md');
+        }
+    }
+    @screen lg {
+        & {
+            max-width: config('screens.lg');
+        }
+    }
+    @screen xl {
+        & {
+            max-width: config('screens.xl');
+        }
+    }
+}

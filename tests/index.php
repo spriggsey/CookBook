@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<header>
-    <div class="navbar">
-        <div class="_logo">
-            <img src="//placehold.it/300" alt="">
+<header class="navigation">
+    <nav class="navigation__bar">
+        <div class="navigation__branding">
+            <a href="" class="navigation__logo">
+                <img src="//placehold.it/150x50" alt="" class="navigation__image">
+            </a>
         </div>
-        <ul class="__menu">
-            <li class="__menu-item"><a class="__menu-link" href="">Item</a></li>
-            <li class="__menu-item"><a class="__menu-link" href="">Item</a></li>
-            <li class="__menu-item"><a class="__menu-link" href="">Item</a></li>
-            <li class="__menu-item"><a class="__menu-link" href="">Item</a></li>
+        <ul class="navigation__menu">
+            <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Events</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Contact us</a></li>
         </ul>
-    </div>
+    </nav>
 </header>
 <main>
 </main>

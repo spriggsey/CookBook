@@ -1,0 +1,39 @@
+@include b('navigation') {
+    @apply bg-white shadow mb-8 px-6;
+    @screen md {
+        @apply px-0;
+    }
+    @include e('bar') {
+        @include container;
+        @apply mx-auto h-full flex items-center justify-center p-4;
+    }
+    @include e('branding') {
+        @apply mr-6;
+    }
+
+    @include e('logo') {
+        @apply text-lg font-hairline text-primary-darker no-underline;
+        &:hover {
+            @apply underline;
+        }
+    }
+
+    @include e('image') {
+        @apply ;
+    }
+
+    @include e('menu') {
+        @apply flex-1 text-right list-reset flex justify-end;
+    }
+
+    @include e('item') {
+        @apply text-primary-darker mr-4;
+    }
+
+    @include e('link') {
+        @apply no-underline text-primary-darker;
+        &:hover {
+            @apply underline;
+        }
+    }
+}
