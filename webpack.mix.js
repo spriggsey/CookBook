@@ -14,7 +14,7 @@ let tailwindcss = require('tailwindcss');
 
 mix.sass('./tests/main.scss', 'tests/').options({
     processCssUrls: false,
-    postCss       : [tailwindcss('./tailwind.js')],
+    postCss       : [tailwindcss('./tailwind.config.js')],
 });
 
 // Full API

@@ -1,5 +1,5 @@
 {
-    "name": "cookbook",
+    "name": "ab-cookbook",
     "version": "0.2.0",
     "description": "A CSS component library built ontop of the tailwindCSS system",
     "main": "scss/cookbook.scss",
@@ -41,6 +41,6 @@
         "laravel-mix": "^4.0.14",
         "sass": "^1.17.1",
         "sass-loader": "^7.1.0",
-        "tailwindcss": "^0.7.4"
+        "tailwindcss": "^1.0.0-beta.3"
     }
 }
